@@ -8,10 +8,17 @@
     <!--wrap content - view only needs to be as big as it needs to be-->
     <!--hint - displays this when text field is empty-->
     <EditText android:id="@+id/edit_message"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/edit_message"
-        android:layout_weight="2"/>
+        android:layout_weight="1"
+        />
+    <!--Weight allows you to size the certain attribute relative to the ones around it.-->
+
+    <!-- Setting the width to zero improves layout performance because using "wrap_content"
+     as the width requires the system to calculate a width that is ultimately irrelevant
+     because the weight value requires another width calculation to fill the remaining space.-->
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

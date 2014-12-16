@@ -1,4 +1,4 @@
-xpackage com.example.joshfermin.omgandroid;
+package com.example.joshfermin.omgandroid;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
