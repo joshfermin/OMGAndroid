@@ -53,7 +53,7 @@ public class MainActivity extends ActionBarActivity {
         startActivity(new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS));
     }
 
-    public void sendMessage(View view){
+    public void search(View view){
 //        Intent intent = new Intent(this, DisplayMessageActivity.class); // this is a reference to the current object — the object whose method or constructor is being called.
                                                                         // intent is passed to the class
         EditText editText = (EditText) findViewById(R.id.edit_message); // findViewByID gets the EditText element
@@ -63,6 +63,15 @@ public class MainActivity extends ActionBarActivity {
         Uri uri = Uri.parse(finalstr);
 //        intent.putExtra(EXTRA_MESSAGE, message); // intent carries datatypes as key value pairs called extras (putExtra(key,value))
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent); // starts intent
+    }
+
+    public void sendMessage(View view){
+        Intent intent = new Intent(this, DisplayMessageActivity.class); // this is a reference to the current object — the object whose method or constructor is being called.
+        // intent is passed to the class
+        EditText editText = (EditText) findViewById(R.id.edit_message); // findViewByID gets the EditText element
+        String message = editText.getText().toString(); // assign the editText (enter a message) to local var message
+        intent.putExtra(EXTRA_MESSAGE, message); // intent carries datatypes as key value pairs called extras (putExtra(key,value))
         startActivity(intent); // starts intent
     }
     
