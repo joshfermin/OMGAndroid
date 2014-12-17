@@ -7,7 +7,7 @@
     <string name="button_send">Send</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
-
+    <string name="action_search">Search</string>
     <!-- for text in the user interface always specify each of the strings as a resource -->
     <!-- String resources allow you to manage all UI text in a single location, which makes the text easier to find and update. -->
     <string name="title_activity_display_message">My Message</string>
