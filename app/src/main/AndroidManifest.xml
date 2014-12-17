@@ -24,5 +24,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.joshfermin.omgandroid.MainActivity" />
         </activity>
+
     </application>
 </manifest>
