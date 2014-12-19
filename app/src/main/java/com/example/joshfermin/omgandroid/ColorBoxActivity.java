@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
-import android.view.Surface;
-import android.view.SurfaceView;
 import android.view.View;
 import android.widget.TextView;
+
+import java.lang.reflect.Field;
 
 //Every Activity is invoked by an Intent, regardless of how the user navigated there.
 // You can get the Intent that started your activity by calling getIntent()
@@ -38,13 +38,19 @@ public class ColorBoxActivity extends ActionBarActivity {
 
         setContentView(R.layout.colorbox);
         View surface = findViewById(R.id.surface);
-        if (message.equals("red")) {
-            surface.setBackgroundColor(Color.RED);
-        } else if (message.equals("blue")) {
-            surface.setBackgroundColor(Color.BLUE);
-        } else if (message.equals("green")) {
-            surface.setBackgroundColor(Color.GREEN);
-        }
+        String upper = message.toUpperCase();
+
+
+        int colorInt = Color.parseColor(upper);
+        surface.setBackgroundColor(colorInt);
+//        if (message.equals("red")) {
+//            surface.setBackgroundColor(Color.RED);
+//        } else if (message.equals("blue")) {
+//            surface.setBackgroundColor(Color.BLUE);
+//        } else if (message.equals("green")) {
+//            surface.setBackgroundColor(Color.GREEN);
+//        }
+
 
 
     }
