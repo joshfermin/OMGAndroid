@@ -80,7 +80,7 @@ public class MainActivity extends ActionBarActivity {
         intent.putExtra(EXTRA_MESSAGE, message); // intent carries datatypes as key value pairs called extras (putExtra(key,value))
         startActivity(intent);
     }
-    
+    // hopefully yellow is gone
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar

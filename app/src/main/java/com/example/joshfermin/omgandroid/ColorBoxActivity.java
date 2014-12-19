@@ -23,7 +23,7 @@ public class ColorBoxActivity extends ActionBarActivity {
 
         // Create the text view
         TextView textView = new TextView(this);
-        textView.setTextSize(100);
+        textView.setTextSize(5);
         textView.setText(message);
 
         // Set the text view as the activity layout
