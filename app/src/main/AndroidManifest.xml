@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.joshfermin.omgandroid.MainActivity" />
         </activity>
+        <activity
+            android:name=".ColorBoxActivity"
+            android:label="@string/color_box_display_message"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joshfermin.omgandroid.MainActivity" />
+        </activity>
 
     </application>
 </manifest>

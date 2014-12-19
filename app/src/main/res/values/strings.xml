@@ -11,5 +11,6 @@
     <!-- for text in the user interface always specify each of the strings as a resource -->
     <!-- String resources allow you to manage all UI text in a single location, which makes the text easier to find and update. -->
     <string name="title_activity_display_message">My Message</string>
+    <string name="color_box_display_message">Color</string>
 
 </resources>
